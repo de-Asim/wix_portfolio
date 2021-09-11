@@ -36,13 +36,17 @@
     list-style: none;
     display: flex;
 }
-#navitems li{
-    color: black;
+#navites li{
+    
+}
+#navitems li a{
+    display: inline-block;
     font-size: 0.9rem;
     margin: 1.6em 1em;
     color: rgb(175, 180, 179);
     cursor: pointer;
+    text-decoration: none;
 }
-#navitems li:hover{
+#navitems li a:hover{
     color: rgb(217, 222, 223);
 }
