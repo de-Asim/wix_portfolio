@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
-const port = 9090;
+const port = process.env.PORT || 9090;
 
 const static_path = path.join(__dirname,'../public');
 const partials_path = path.join(__dirname,'../templates/partials');
