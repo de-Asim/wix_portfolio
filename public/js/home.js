@@ -87,15 +87,15 @@ let observer = new IntersectionObserver(function (entries, observer) {
 observer.observe(skills);
 observer.observe(experience);
 
-const con2 = document.getElementById('container2');
-window.addEventListener('scroll',()=>{
-  let offset = window.pageYOffset;
-  con2.style.backgroundPositionY= 600+(offset*0.7)+"px";
-  con2.style.backgroundSize='cover';
-})
-const con4 = document.getElementById('container4');
-window.addEventListener('scroll',()=>{
-  let offset = window.pageYOffset;
-  con4.style.backgroundPositionY= (offset*0.7)+"px";
-  con4.style.backgroundSize='cover';
-})
+// const con2 = document.getElementById('container2');
+// window.addEventListener('scroll',()=>{
+//   let offset = window.pageYOffset;
+//   con2.style.backgroundPositionY= 600+(offset*0.7)+"px";
+//   con2.style.backgroundSize='cover';
+// })
+// const con4 = document.getElementById('container4');
+// window.addEventListener('scroll',()=>{
+//   let offset = window.pageYOffset;
+//   con4.style.backgroundPositionY= (offset*0.7)+"px";
+//   con4.style.backgroundSize='cover';
+// })
