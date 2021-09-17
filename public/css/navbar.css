@@ -19,6 +19,8 @@
     border-radius: 50%;
     position: relative;
     margin-right: 6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .logo::before{
     content: 'A';
@@ -32,21 +34,119 @@
     color: var(--green);
     font-size: 1.6rem;
 }
-#navitems{
+.navitems{
     list-style: none;
     display: flex;
 }
-#navites li{
+.navites li{
     
 }
-#navitems li a{
+.navitems li a{
     display: inline-block;
     font-size: 0.9rem;
     margin: 1.6em 1em;
     color: rgb(175, 180, 179);
     cursor: pointer;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
 }
 #navitems li a:hover{
     color: rgb(217, 222, 223);
 }
+
+#ham{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    visibility: hidden;
+}
+.hr{
+    display: block;
+    width: 40px;
+    position: absolute;
+    right: 4vw;
+    cursor: pointer;
+}
+.hr hr{
+   margin:6px;
+   background-color: white;
+}
+/* #close{
+    position: absolute;
+    top: 10px;
+    right: 4vw;
+    cursor: pointer;
+} */
+#close {
+    position: absolute;
+    right: 4vw;
+    top: 15px;
+    width: 40px;
+    height: 30px;
+    opacity: 1;
+    cursor: pointer;
+    display: none;
+  }
+  #close:before, #close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 2px;
+    background-color: white;
+  }
+  #close:before {
+    transform: rotate(45deg);
+  }
+  #close:after {
+    transform: rotate(-45deg);
+  }
+@media (max-width:768px) {
+    #ham{
+        visibility: visible;
+    }
+    #resp{
+        display: flex;
+        align-items: center;
+        gap: 50vw;
+    }
+    #navbar{
+        flex-direction: column;
+    }
+    #close{
+        display: block;
+    }
+    .navitems{
+        padding-top: 15vh;
+        flex-direction: column;
+        visibility: visible;
+        overflow: hidden;
+        height: 100%;
+        width: 0%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color:rgb(51,59,80);
+        transition: width .5s;
+        z-index: 99;
+    }
+    .navitems li a{
+        margin: 0;
+        padding: 1rem 0;
+        width: 100vw;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1rem;
+    }
+    .navitems li a:hover{
+        color: var(--green);
+    }
+    .v-class-resp{
+        /* visibility: visible; */
+        width: 100vw;
+        visibility: visible;
+        z-index: 99;
+        /* position: relative; */
+    }
+    }

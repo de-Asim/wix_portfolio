@@ -9,6 +9,7 @@
   padding: 0%;
   margin: 0%;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 #container1 {
   background-color: var(--bg);
@@ -128,10 +129,13 @@
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   letter-spacing: 8px;
+  /* border: 1px solid red; */
+  text-align: center;
 }
 .professional span {
   margin-right: 30px;
   color: rgb(175, 187, 189);
+  text-align: center;
 }
 .my {
   font-size: 1.5rem;
@@ -161,6 +165,7 @@
   font-family: "Montserrat", sans-serif;
   color: lightgrey;
   text-transform: uppercase;
+
 }
 .barspan {
   width: 87%;
@@ -255,6 +260,7 @@
     width: 20vw;
     /* min-width: 307px; */
     text-align: right;
+    /* position: relative; */
   }
   .left::before{
     content: "";
@@ -292,7 +298,7 @@
   margin-bottom: 8px;
   display:inline-block;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .hop{
   font-size: 1.6rem;
@@ -447,4 +453,86 @@
 }
 #footer p{
   font-size: 0.9rem;
+}
+@media (max-width:768px) {
+  #container1-5{
+    min-width: 95vw;
+    padding: 0px 1.5vw;
+  }
+  
+  #container3-5{
+    min-width: 95%;
+  }
+  #intro{
+    margin-left: 30px;
+  }
+  #bigtext{
+    font-size: 3.5rem;
+  }
+  .professional{
+    font-size: 1.5rem;
+  }
+  .professional span{
+    margin-right:10px ;
+  }
+  .my{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .skillspan{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90vw;
+  }
+  .skillspan span{
+    display: block; 
+    width: 100%;
+     text-align: left;
+    /* border: 1px solid rebeccapurple; */
+  }
+  #experience{
+    /* margin: 0%; */
+    width: 90vw;
+  }
+  .right{
+    float: none;
+    width: 100%;
+    margin: 0%;
+    /* border: 1px solid red; */
+  }
+  .right::before{
+    content: none;
+  }
+  .left{
+    margin: 0%;
+    float: none;
+    width: 100%;
+    text-align: left;
+    /* border: 1px solid red; */
+    position: relative;
+  }
+  .left::before{
+    content: none;
+  }
+  #experience::before{
+    content: none;
+  }
+  .year{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+  }
+  #contactleft{
+    float: none;
+    width: 100%;
+    margin-bottom:0 ;
+    text-align: center;
+  }
+  #contactright{
+    width: 100%;
+    float: none;
+    margin-top: 30px;
+  }
+  
 }
